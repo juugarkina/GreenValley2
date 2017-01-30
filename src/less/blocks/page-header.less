@@ -1,3 +1,26 @@
+@import '../variables.less';
+
+
 .page-header {
-  color: @text-color;
+    color: @text-color;
+    padding: 20px;
+
+
+    &__inner{
+
+        display: flex;
+        // flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+
+    &__contacts {
+        display: none;
+    }
+
+    &__btn {
+        display: none;
+    }
 }
+
