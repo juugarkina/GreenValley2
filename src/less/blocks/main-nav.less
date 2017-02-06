@@ -35,13 +35,35 @@
         padding: 10px;
         border: 1px solid @color-grey-light;
 
-         @media (min-width: @screen-lg) {
-            border: none;
-            display: inline-block;
+        &:hover {
+            color: @color-orange;
+
         }
 
         &--active {
             color: @color-orange;
+
+            &:after {
+                content:"";
+                width: 30px;
+                height: 3px;
+                background-color: @color-orange;
+                display: block;
+                margin-top: 10px ;
+            }
+
+            &:hover {
+                // delete after - how?
+
+                // .main-nav__item--active:after {
+                //     display: none;
+                // }
+            }
+        }
+
+         @media (min-width: @screen-lg) {
+            border: none;
+            display: inline-block;
         }
     }
 
