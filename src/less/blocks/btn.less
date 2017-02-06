@@ -35,6 +35,33 @@
     }
   }
 
+  &--green {
+    background-color: @color-green;
+    border-radius: 0;
 
+    &:hover{
+        background-color: @color-green-dark;
+    }
+  }
+
+  &--transparent {
+    background-color: transparent;
+    border: 2px solid #fff;
+
+    &:hover{
+        background-color: @bgr-color;
+        color: rgba(0,0,0, 0);;
+    }
+  }
+
+  &--more {
+    color: @text-color;
+    text-decoration-style: dotted;
+    background-color: @bgr-color;
+
+    &:hover{
+        text-decoration-style: none;
+    }
+  }
 
 }
