@@ -5,22 +5,48 @@
 
     font-size: 14px;
     text-transform: uppercase;
+    flex-basis: 100%;
+    // position: absolute;
+    // left: 0;
+    display: none;
 
-    // display: flex;
+
+    @media (min-width: @screen-lg) {
+            display: block;
+            flex-basis: 41.667%;
+
+        }
+
 
     &__list{
         list-style: none;
-        // display: none;
-        // display: flex;
-        // flex-direction: column;
+        padding: 0;
+        margin: 0;
+
+        @media (min-width: @screen-lg) {
+            padding: 0 10px;
+        }
+
 
     }
 
     &__item {
-        flex-basis: 100%;
+        text-align: center;
+        padding: 10px;
+        border: 1px solid @color-grey-light;
+
+         @media (min-width: @screen-lg) {
+            border: none;
+            display: inline-block;
+        }
+
+        &--active {
+            color: @color-orange;
+        }
     }
 
-    &__burger {
 
-    }
+
+
+
 }

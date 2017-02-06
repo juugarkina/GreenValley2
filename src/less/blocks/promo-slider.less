@@ -1,0 +1,21 @@
+// Для импорта в диспетчер подключений: @import './src/less/blocks/promo-slider.less';
+
+
+.promo-slider {
+    background-image: url(/img/promo.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    // background-attachment: fixed;
+    border: 1px solid #000;
+    min-height: 320px;
+
+    &__item {
+        display: none;
+        background-color: @bgr-color;
+
+
+        &--active {
+            display: block;
+        }
+    }
+}

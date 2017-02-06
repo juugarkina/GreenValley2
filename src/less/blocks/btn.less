@@ -1,0 +1,35 @@
+// Для импорта в диспетчер подключений: @import './src/less/blocks/btn.less';
+
+
+.btn {
+  padding: 10px 20px;
+
+  border-radius: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: @font-family;
+
+  &--orange{
+    background-color: @color-orange;
+  }
+
+  &--picture{
+
+    &:before {
+        content:"";
+        background-image: url(../img/calendar-btn-pic.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 15px;
+        height: 15px;
+        // border: 2px solid green;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 5px;
+
+    }
+  }
+
+
+}

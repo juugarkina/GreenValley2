@@ -4,11 +4,16 @@ body {
   font-family: @font-family;
   color: @text-color;
   background-color: @bgr-color;
+  box-sizing: border-box;
 
 }
 h1 {
     font-size: 36px;
     font-family: @font-family-h;
+
+        @media (min-width: @screen-sm) {
+            font-size: 18px;
+        }
 }
 
 h2 {
@@ -29,4 +34,6 @@ p{
 a {
     text-decoration: none;
     text-align: center;
+    color: @text-color;
 }
+
