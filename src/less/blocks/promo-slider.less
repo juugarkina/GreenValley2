@@ -7,48 +7,24 @@
     border: 1px solid #000;
     min-height: 320px;
 
-    h1,
-    p {
-        background-color: @bgr-color;
-        margin: 0;
-        padding: 10px;
+//     h1,
+//     p {
+//         background-color: @bgr-color;
+//         margin: 0;
+//         padding: 10px;
 
-        @media (min-width: @screen-sm) {
-            margin: 20px;
-            text-align: left;
-            width: 75%;
-        }
+//         @media (min-width: @screen-sm) {
+//             margin: 20px;
+//             text-align: left;
+//             width: 75%;
+//         }
 
-        @media (min-width: @screen-lg) {
-            // margin: 20px;
-            // text-align: left;
-            width: 50%;
-        }
-    }
+//         @media (min-width: @screen-lg) {
+//             // margin: 20px;
+//             // text-align: left;
+//             width: 50%;
+//         }
+//     }
 
-    &__item {
-        display: none;
-        border: 1px solid red;
-        // если убрать границу, появляется марджин - почему??? даже если ноль поставить
-        margin: 0;
-        min-height: 320px;
-        padding-top: 20px;
-        text-align: center;
-
-        &--family {
-            background-image: url(/img/promo-family.jpg);
-            background-repeat: no-repeat;
-            background-size: auto;
-        }
-
-        &--corporate {
-            background-image: url(/img/offers-bgr.jpg);
-            background-repeat: no-repeat;
-            background-size: auto;
-        }
-
-        &--active {
-            display: block;
-        }
-    }
+//
 }

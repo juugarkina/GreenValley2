@@ -31,23 +31,32 @@
 
 <div class="promo">
     <div class="promo-slider">
-        <div class="promo-slider__item  promo-slider__item--family  promo-slider__item--active">
-            <h1 class="promo-slider__title">Семейный отдых на  берегу Финского залива</h1>
-            <div class="promo-slider__text">
-                <p>Green Valley - это современная база отдыха в курортном районе для здорового отдыха всей семёй.</p>
+        <div class="promo-slider__thumbs owl-carousel" id="promo-slider-thumbs">
+            <div class="promo-slider__item  promo-slider__item--family  promo-slider__item--active">
+                <a href="">
+                    <img src="/img/promo-family.jpg" alt="">
+                    <h1 class="promo-slider__title">Семейный отдых на  берегу Финского залива</h1>
+                    <p class="promo-slider__text">Green Valley - это современная база отдыха в курортном районе для здорового отдыха всей семёй.</p>
+                </a>
+
+            </div>
+            <div class="promo-slider__item promo-slider__item--corporate">
+                <a href="">
+                    <img src="/img/offers-bgr.jpg" alt="">
+                    <h1 class="promo-slider__title">Корпоративный отдых</h1>
+                    <p class="promo-slider__text">Green Valley - это современная база отдыха в курортном районе для здорового отдыха всей компанией.</p>
+                </a>
+
             </div>
         </div>
-        <div class="promo-slider__item promo-slider__item--corporate">
-            <h1 class="promo-slider__title">Корпоративный отдых</h1>
-            <div class="promo-slider__text">
-                <p>Green Valley - это современная база отдыха в курортном районе для здорового отдыха всей компанией.</p>
-            </div>
-        </div>
+
     </div>
+
     <div class="tabs">
-        <div class="tabs__item  tabs__item--active">Семейный отдых</div>
-        <div class="tabs__item">Корпоративный</div>
+        <a href="/img/offers-bgr.jpg" class="tabs__item  tabs__item--active" id="tabs-family">Семейный отдых</a>
+        <a href="/img/promo-family.jpg" class="tabs__item " id="tabs-corporate">Корпоративный</a>
     </div>
+
     <section class="health-block">
         <div class="health-block__inner">
             <h2 class="health-block__title">Здоровый отдых</h2>
@@ -233,6 +242,8 @@
 
 <script src="jquery.min.js"></script>
 <script src="owlcarousel/owl.carousel.min.js"></script>
+<script src="js/script.min.js"></script>
+
 </body>
 
 
