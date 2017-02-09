@@ -3,28 +3,44 @@
 
 .promo-slider {
 
-    // background-attachment: fixed;
+
     border: 1px solid #000;
-    min-height: 320px;
+    // min-height: 320px;
+    position: relative;
 
-//     h1,
-//     p {
-//         background-color: @bgr-color;
-//         margin: 0;
-//         padding: 10px;
+    &__text{
+        position: absolute;
+        width: 100%;
+        margin-top: 20px;
+        top: 0;
+        left: 0;
+        // border: 1px solid #000;
 
-//         @media (min-width: @screen-sm) {
-//             margin: 20px;
-//             text-align: left;
-//             width: 75%;
-//         }
+        @media (min-width: @screen-sm) {
+            margin: 20px;
+            text-align: left;
+            width: 75%;
+        }
 
-//         @media (min-width: @screen-lg) {
-//             // margin: 20px;
-//             // text-align: left;
-//             width: 50%;
-//         }
-//     }
+        @media (min-width: @screen-lg) {
+            width: 50%;
+        }
+    }
 
-//
+    &__title,
+    &__info {
+        background-color: @bgr-color;
+        margin: 0;
+        padding: 10px;
+        // border: 1px solid #000;
+
+
+        @media (min-width: @screen-sm) {
+            margin-bottom: 20px;
+        }
+
+    }
+
+
+
 }

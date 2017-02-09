@@ -5,6 +5,37 @@ $(document).ready(function(){
     loop:true,
   });
 
+   $("#gallery-preview").owlCarousel({
+    items:6,
+    center:true,
+    loop:true,
+    startPosition:3,
+    responsive: {
+        0: {
+            items:1
+        },
+        768:{
+            items: 6
+        },
+        // 1200: {
+        //     items:6
+        // },
+    }
+  });
+
+   $("#gallery-preview a").on('click', function(e){
+    e.preventDefault();
+    var mainImgUrl = $(this).attr('href');
+    $('#gallery-img').attr('src', mainImgUrl);
+
+// надо как-то получить номер щелкнутого элемента и сделать его активным - чтобы он стал центральным
+// или у карусели есть уже такое свойство и я его просто не нахожу
+    // var startPositionNumber = $(this).attr();
+    // $("#gallery-preview").owlCarousel({
+    //     startPosition:startPositionNumber,
+    // });
+  });
+
 // как это сделать средствами самой карусели? urlHash??
 var carousselPromoTab = document.querySelectorAll(".tabs__item")
 var owlItems=document.querySelectorAll('.owl-item')
