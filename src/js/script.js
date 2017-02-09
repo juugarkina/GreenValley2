@@ -5,6 +5,12 @@ $(document).ready(function(){
     loop:true,
   });
 
+  $("#offers-slider").owlCarousel({
+    items:1,
+    loop:true,
+    dots:true,
+  });
+
    $("#gallery-preview").owlCarousel({
     items:6,
     center:true,
