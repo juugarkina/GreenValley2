@@ -10,16 +10,16 @@ $(document).ready(function(){
     center:true,
     loop:true,
     startPosition:3,
+    // items:1,
+
     responsive: {
         0: {
-            items:1
+            items:1,
         },
         768:{
-            items: 6
+            items: 6,
         },
-        // 1200: {
-        //     items:6
-        // },
+
     }
   });
 

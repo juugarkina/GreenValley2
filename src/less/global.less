@@ -17,8 +17,12 @@ h1 {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 26px;
     font-family: @font-family-h;
+
+    @media (min-width: @screen-sm) {//правильно? с 768 должно стать 36
+            font-size: 30px;
+        }
 }
 
 h3{
