@@ -1,26 +1,26 @@
 $(document).ready(function(){
+
   $("#promo-slider-thumbs").owlCarousel({
     items:1,
-    // center:true,
     loop:true,
-    // responsive: {
-    //     0: {
-    //         items:3
-    //     },
-    //     768:{
-    //         items: 4
-    //     },
-    //     1200: {
-    //         items:6
-    //     },
-    // }
   });
 
-  $("#tabs-family").on('click', function(e){
-    e.preventDefault();
-    $ (".tabs__item").toggleClass('tabs__item--active');
-    var changeImgUrl = $(this).attr('href');
-    // $('#gallery-main-img').attr('src', changeImgUrl);
-    console.log(changeImgUrl)
-  });
+// как это сделать средствами самой карусели? urlHash??
+var carousselPromoTab = document.querySelectorAll(".tabs__item")
+var owlItems=document.querySelectorAll('.owl-item')
+        for (var i = 0; i < carousselPromoTab.length; i++) {
+            carousselPromoTab[i].addEventListener("click", function(e){
+            e.preventDefault();
+           if (this.classList("tabs__item--active")){
+                e.preventDefault();// здесь надо cakkback(((
+            } else{
+                e.preventDefault();
+                for (var j = 0; j < carousselPromoTab.length; j++) {
+                    carousselPromoTab[j].classList.remove("tabs__item--active")
+                };
+                carousselPromoTab[i].classList.add("tabs__item--active");
+                owlItems[i].classList.add("active");
+            }
+            })
+        };
 });
