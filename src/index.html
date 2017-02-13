@@ -9,10 +9,12 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 </head>
 <body>
+@@include('img/sprite-svg.svg')
+
 <header class="page-header">
     <div class="page-header__inner">
         <a href="" class="logo"><img src="img/logo.png" alt="logo" class="logo__img"></a>
-        <span class="page-header__burger" id="page-header-burger"></span>
+        <span class="page-header__burger" id="page-header-burger"> <svg width="36" height="36"><use xlink:href="#menu" fill="#ff7435"></use> </svg></span>
         <nav class="main-nav">
             <ul class="main-nav__list">
                 <li class="main-nav__item"><a href="" class="main-nav__link">Номера</a></li>
