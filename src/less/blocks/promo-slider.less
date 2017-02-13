@@ -4,17 +4,20 @@
 .promo-slider {
 
 
-    border: 1px solid #000;
-    // min-height: 320px;
-    position: relative;
+    // border: 1px solid #000;
 
-    &__text{
-        position: absolute;
+    &__item {
+        background-image: url(/img/promo-family.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        // min-height: 320px;
+    }
+
+    &__text {
         width: 100%;
         margin-top: 20px;
-        top: 0;
-        left: 0;
-        // border: 1px solid #000;
+
+
 
         @media (min-width: @screen-sm) {
             margin: 20px;
@@ -29,11 +32,11 @@
 
     &__title,
     &__info {
-        // display: inline;
+        display: inline;
         background-color: @bgr-color-opacity;
         margin: 0;
         padding: 10px;
-        // border: 1px solid #000;
+
 
 
         @media (min-width: @screen-sm) {
@@ -45,3 +48,5 @@
 
 
 }
+
+

@@ -6,6 +6,16 @@ $(document).ready(function(){
         $(".main-nav").toggleClass('main-nav--open');
     });
 
+    $ ('#gallery-preview').slick({
+        slidesToShow: 5,
+        centerMode: true,
+        focusOnSelect: true,
+        arrows: false,
+        centerPadding: "100px",
+        initialSlide:3
+    });
+
+
     $('#promo-slider-thumbs').slick({
         infinite: true,
         slidesToShow: 1
