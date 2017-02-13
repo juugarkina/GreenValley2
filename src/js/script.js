@@ -1,17 +1,19 @@
 $(document).ready(function(){
 
+
+
     $("#page-header-burger").on('click', function(e){
         $(".main-nav").toggleClass('main-nav--open');
     });
 
     $('#promo-slider-thumbs').slick({
         infinite: true,
-        slidesToShow: 1,
+        slidesToShow: 1
     });
 
      $('#health-block-slider').slick({
         infinite: true,
-        slidesToShow: 1,
+        slidesToShow: 1
     });
 
 
