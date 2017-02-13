@@ -4,34 +4,44 @@ $(document).ready(function(){
         $(".main-nav").toggleClass('main-nav--open');
     });
 
-  $("#promo-slider-thumbs").owlCarousel({
-    items:1,
-    loop:true,
-  });
+    $('#promo-slider-thumbs').slick({
+        infinite: true,
+        slidesToShow: 1,
+    });
 
-  $("#offers-slider").owlCarousel({
-    items:1,
-    loop:true,
-    dots:true,
-  });
+     $('#health-block-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+    });
 
-   $("#gallery-preview").owlCarousel({
-    items:6,
-    center:true,
-    loop:true,
-    startPosition:3,
-    // items:1,
+  // $("#promo-slider-thumbs").owlCarousel({
+  //   items:1,
+  //   loop:true,
+  // });
 
-    responsive: {
-        0: {
-            items:1,
-        },
-        768:{
-            items: 6,
-        },
+  // $("#offers-slider").owlCarousel({
+  //   items:1,
+  //   loop:true,
+  //   dots:true,
+  // });
 
-    }
-  });
+  //  $("#gallery-preview").owlCarousel({
+  //   items:6,
+  //   center:true,
+  //   loop:true,
+  //   startPosition:3,
+  //   // items:1,
+
+  //   responsive: {
+  //       0: {
+  //           items:1,
+  //       },
+  //       768:{
+  //           items: 6,
+  //       },
+
+  //   }
+  // });
 
    $("#gallery-preview a").on('click', function(e){
     e.preventDefault();

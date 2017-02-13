@@ -5,7 +5,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|PT+Sans+Caption|PT+Serif+Caption" rel="stylesheet">
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <!-- <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css"> -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 </head>
 <body>
@@ -33,29 +33,15 @@
 </header>
 
 <div class="promo">
-    <div class="promo-slider owl-carousel" id="promo-slider-thumbs"">
+    <div class="promo-slider" id="promo-slider-thumbs">
         <div class="promo-slider__item  promo-slider__item--family">
-                <a href="">
-                    <img src="/img/promo-family.jpg" alt="" class="promo-slider__img">
-                    <div class="promo-slider__text">
-                        <h1 class="promo-slider__title">Семейный отдых на  берегу <br> Финского залива</h1>
-                        <p class="promo-slider__info">Green Valley - это современная база отдыха в курортном районе для здорового отдыха всей семёй.</p>
-                    </div>
-                </a>
-
-            </div>
-            <div class="promo-slider__item promo-slider__item--corporate">
-                <a href="">
-                    <img src="/img/offers-bgr.jpg" alt="" class="promo-slider__img">
-                    <div class="promo-slider__text">
-                        <h1 class="promo-slider__title">Корпоративный отдых</h1>
-                        <p class="promo-slider__info">Green Valley - это современная база отдыха в курортном районе для здорового отдыха всей компанией.</p>
-                    </div>
-                </a>
-
-            </div>
-
-
+            <h1 class="promo-slider__title">Семейный отдых на  берегу <br> Финского залива</h1>
+            <p class="promo-slider__info">Green Valley - это современная база отдыха в курортном районе для здорового отдыха всей семёй.</p>
+        </div>
+        <div class="promo-slider__item promo-slider__item--corporate">
+            <h1 class="promo-slider__title">Корпоративный отдых</h1>
+            <p class="promo-slider__info">Green Valley - это современная база отдыха в курортном районе для здорового отдыха всей компанией.</p>
+        </div>
     </div>
 
     <div class="tabs">
@@ -63,38 +49,72 @@
         <a href="/img/promo-family.jpg" class="tabs__item " id="tabs-corporate">Корпоративный</a>
     </div>
 
-    <section class="health-block">
-        <div class="health-block__inner">
-            <h2 class="health-block__title">Здоровый отдых</h2>
-            <p class="health-block__text">Плавайте в бассейне, играйте в волейбол, футбол и другие игры. Устройте семейный пикник с шашлыками или снимите напряжение в бане или спа. Почувствуйте отдых</p>
-            <div class="health-block__activities">
-                <div class="health-block__item">
-                    <img src="/img/health-pool.png" alt="" class="health-block__img">
-                    <p class="health-block__caption">Бассейн</p>
-                </div>
-                <div class="health-block__item">
-                    <img src="img/health-sportground.png" alt="" class="health-block__img">
-                    <p class="health-block__caption">Спортивная площадка</p>
-                </div>
-                <div class="health-block__item">
-                    <img src="img/health-billiards.png" alt="" class="health-block__img">
-                    <p class="health-block__caption">Бильярд</p>
-                </div>
-                <div class="health-block__item">
-                    <img src="img/health-spa.png" alt="" class="health-block__img">
-                    <p class="health-block__caption">Спа</p>
-                </div>
-                <div class="health-block__item">
-                    <img src="img/health-banya.png" alt="" class="health-block__img">
-                    <p class="health-block__caption">Бани</p>
-                </div>
-                <div class="health-block__item">
-                    <img src="img/health-animation.png" alt="" class="health-block__img">
-                    <p class="health-block__caption">Анимация</p>
+    <div class="health-block" id="health-block-slider">
+        <div class="health-block__slider-item">
+            <div class="health-block__inner">
+                <h2 class="health-block__title">Здоровый отдых</h2>
+                <p class="health-block__text">Плавайте в бассейне, играйте в волейбол, футбол и другие игры. Устройте семейный пикник с шашлыками или снимите напряжение в бане или спа. Почувствуйте отдых</p>
+                <div class="health-block__activities">
+                    <div class="health-block__item">
+                        <img src="/img/health-pool.png" alt="" class="health-block__img">
+                        <p class="health-block__caption">Бассейн</p>
+                    </div>
+                    <div class="health-block__item">
+                        <img src="img/health-sportground.png" alt="" class="health-block__img">
+                        <p class="health-block__caption">Спортивная площадка</p>
+                    </div>
+                    <div class="health-block__item">
+                        <img src="img/health-billiards.png" alt="" class="health-block__img">
+                        <p class="health-block__caption">Бильярд</p>
+                    </div>
+                    <div class="health-block__item">
+                        <img src="img/health-spa.png" alt="" class="health-block__img">
+                        <p class="health-block__caption">Спа</p>
+                    </div>
+                    <div class="health-block__item">
+                        <img src="img/health-banya.png" alt="" class="health-block__img">
+                        <p class="health-block__caption">Бани</p>
+                    </div>
+                    <div class="health-block__item">
+                        <img src="img/health-animation.png" alt="" class="health-block__img">
+                        <p class="health-block__caption">Анимация</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+         <div class="health-block__slider-item">
+            <div class="health-block__inner">
+                <h2 class="health-block__title">НЕЗдоровый отдых</h2>
+                <p class="health-block__text">Отдыхайте всей корпорацией. ХАРАШО</p>
+                <div class="health-block__activities">
+                    <div class="health-block__item">
+                        <img src="/img/health-pool.png" alt="" class="health-block__img">
+                        <p class="health-block__caption">Бассейн</p>
+                    </div>
+                    <div class="health-block__item">
+                        <img src="img/health-sportground.png" alt="" class="health-block__img">
+                        <p class="health-block__caption">Спортивная площадка</p>
+                    </div>
+                    <div class="health-block__item">
+                        <img src="img/health-billiards.png" alt="" class="health-block__img">
+                        <p class="health-block__caption">Бильярд</p>
+                    </div>
+                    <div class="health-block__item">
+                        <img src="img/health-spa.png" alt="" class="health-block__img">
+                        <p class="health-block__caption">Спа</p>
+                    </div>
+                    <div class="health-block__item">
+                        <img src="img/health-banya.png" alt="" class="health-block__img">
+                        <p class="health-block__caption">Бани</p>
+                    </div>
+                    <div class="health-block__item">
+                        <img src="img/health-animation.png" alt="" class="health-block__img">
+                        <p class="health-block__caption">Анимация</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="gallery">
@@ -247,7 +267,7 @@
 </footer>
 
 <script src="jquery.min.js"></script>
-<script src="owlcarousel/owl.carousel.min.js"></script>
+<!-- <script src="owlcarousel/owl.carousel.min.js"></script> -->
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 <script src="js/script.min.js"></script>
 
