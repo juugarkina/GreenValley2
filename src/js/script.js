@@ -12,17 +12,21 @@ $(document).ready(function(){
         focusOnSelect: true,
         arrows: false,
         centerPadding: "100px",
+        infinite: true,
         initialSlide:3
     });
 
 
+
     $('#promo-slider-thumbs').slick({
         infinite: true,
+        arrows: false,
         slidesToShow: 1
     });
 
      $('#health-block-slider').slick({
         infinite: true,
+        arrows: false,
         slidesToShow: 1
     });
 
