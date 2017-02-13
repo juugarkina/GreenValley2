@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+    $("#page-header-burger").on('click', function(e){
+        $(".main-nav").toggleClass('main-nav--open');
+    });
+
   $("#promo-slider-thumbs").owlCarousel({
     items:1,
     loop:true,

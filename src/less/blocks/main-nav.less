@@ -3,12 +3,15 @@
 
 .main-nav {
 
-    font-size: 14px;
+    font-size: 1.6rem;
     text-transform: uppercase;
     flex-basis: 100%;
-    // position: absolute;
-    // left: 0;
     display: none;
+
+
+    &--open {
+        display: block;
+    }
 
 
     @media (min-width: @screen-lg) {
@@ -39,7 +42,7 @@
 
 
         &:hover {
-            color: @color-orange;
+            color: @color-orange !important;
 
         }
 

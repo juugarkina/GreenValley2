@@ -6,15 +6,16 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|PT+Sans+Caption|PT+Serif+Caption" rel="stylesheet">
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 </head>
 <body>
 <header class="page-header">
     <div class="page-header__inner">
-        <a href="" class="logo"><img src="/img/logo.png" alt="logo" class="logo__img"></a>
-        <span class="page-header__burger"></span>
+        <a href="" class="logo"><img src="img/logo.png" alt="logo" class="logo__img"></a>
+        <span class="page-header__burger" id="page-header-burger"></span>
         <nav class="main-nav">
             <ul class="main-nav__list">
-                <li class="main-nav__item"><a href="" class="main-nav__link main-nav__item--active">Номера</a></li>
+                <li class="main-nav__item"><a href="" class="main-nav__link">Номера</a></li>
                 <li class="main-nav__item"><a href="" class="main-nav__link">Коттедж</a></li>
                 <li class="main-nav__item"><a href="" class="main-nav__link">Ресторан</a></li>
                 <li class="main-nav__item"><a href="" class="main-nav__link">Отдых</a></li>
@@ -30,12 +31,12 @@
 </header>
 
 <div class="promo">
-    <div class="promo-sliderowl-carousel" id="promo-slider-thumbs"">
+    <div class="promo-slider owl-carousel" id="promo-slider-thumbs"">
         <div class="promo-slider__item  promo-slider__item--family">
                 <a href="">
                     <img src="/img/promo-family.jpg" alt="" class="promo-slider__img">
                     <div class="promo-slider__text">
-                        <h1 class="promo-slider__title">Семейный отдых на  берегу Финского залива</h1>
+                        <h1 class="promo-slider__title">Семейный отдых на  берегу <br> Финского залива</h1>
                         <p class="promo-slider__info">Green Valley - это современная база отдыха в курортном районе для здорового отдыха всей семёй.</p>
                     </div>
                 </a>
@@ -185,10 +186,6 @@
                     </div>
             </a></div>
         </div>
-        <div class="offers__tabs">
-            <div class="offers__tab  offers__tab--active"></div>
-            <div class="offers__tab"></div>
-        </div>
     </div>
 </section>
 
@@ -249,6 +246,7 @@
 
 <script src="jquery.min.js"></script>
 <script src="owlcarousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 <script src="js/script.min.js"></script>
 
 </body>
