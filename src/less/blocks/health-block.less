@@ -2,35 +2,57 @@
 
 
 .health-block {
-    display: flex;
-    justify-content: center;
-    border: 1px solid red;
+    // display: flex;
+    // justify-content: center;
+    // border: 1px solid red;
+
+    &__inner{
         background-image: url(/img/health-promo-bgr.png);
         background-repeat: no-repeat;
         background-position: center top;
-        background-size: cover;//как зафиксировать размер? чтобы он не менялся с изменением размеров экрана(((
-
-    &__inner{
+        background-size: cover;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        flex-basis: 100%;
+        width: 100%;
+        // flex-basis: 100%;
         text-align: center;
         // border: 1px solid blue;
 
         @media (min-width: @screen-sm) {
-            flex-basis: 75%;
+            width: 75%;
+            margin: auto;
+            background-size: contain;
+            // flex-basis: 75%;
         }
 
         @media (min-width: @screen-lg) {
-            flex-basis: 66.67%;
+            width: 66.67%;
+            // flex-basis: 66.67%;
         }
 
 
     }
 
+    &__title{
+        flex-basis: 100%;
+        // border: 1px solid #000;
+    }
+
+    &__text{
+        // border: 1px solid #000;
+        flex-basis: 75%;
+        margin-bottom: 30px;
+    }
+
+    &__img {
+        width: 80px;
+        height: 80px;
+    }
+
     &__activities{
         display: none;//почему не срабатывает?
+        // border: 1px solid red;
 
         @media (min-width: @screen-sm) {
         display: flex;
@@ -44,6 +66,11 @@
 
     &__item {
         flex-basis: 25%;
+        // border: 1px solid #000;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-transform: uppercase;
 
         @media (min-width: @screen-lg) {
             flex-basis: 16%;
