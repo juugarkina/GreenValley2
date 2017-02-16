@@ -55,15 +55,33 @@ $(document).ready(function(){
         centerPadding: "100px",
         infinite: true,
         asNavFor: '#gallery-main',
-        initialSlide:3
+        initialSlide:3,
+        responsive: [
+        {
+        breakpoint: 768,
+           settings: "unslick"
+        }
+        //не работает(
+// а здесь брейкпоинт работает как до или после и если после - то как тогда сделать так,чтобы не работало от0 до 768 а потом заработало
+  ]
     });
 
     $ ('#gallery-main').slick({
         slidesToShow: 1,
         arrows: false,
         infinite: true,
-        // asNavFor: '#gallery-preview',
+        asNavFor: '#gallery-preview',
         initialSlide:3
+    });
+
+
+    $ ('#testimonials-slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        prevArrow: '<svg width="36" height="36" class="slick-prev"><use xlink:href="#back" fill="#fafafa"></use></svg>',
+        nextArrow: '<svg width="36" height="36" class="slick-prev"><use xlink:href="#next" fill="#fafafa"></use></svg>'
+        // appendArrows: '$(".slick-active")'
     });
 
 });

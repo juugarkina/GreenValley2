@@ -5,12 +5,14 @@
   background-image: url(/img/testimonials-bgr.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center top;
   margin: 20px 0;
+  .container();
 
   &__inner {
     text-align: center;
     // margin: auto 50px;
-    width: 100%;
+    width: 80%;
     padding: 50px 0;
 
   }
@@ -22,10 +24,11 @@
   }
 
   &__slider {
-    display: flex;
-    flex-wrap: wrap;
+    .container()
+    // display: flex;
+    // flex-wrap: wrap;
     // margin: 40px 0;
-    justify-content: center;
+    // justify-content: center;
   }
 
   &__btn {
